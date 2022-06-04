@@ -6,9 +6,12 @@
 -->
 <html>
 	<head>
-		<title>university-petitions</title>
+		<title>대학생 청원게시판</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="대하생 청원 게시판">
+    <meta name="author" content="GyeongHo Na">
+    <!-- 반응형 웹 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" /> 
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -34,10 +37,21 @@
 									<h1 style="display:inline">청원 게시판</h1><h3 style="display:inline"> | University Petitions</h3>
 									<p>대학생들을 위한 청원 게시판입니다.</p> 
                   <p>여러분의 목소리를 들려주세요!</p>
+
+                  <hr width="500px" align="center">
+
+                  <h3>사용자</h3>
+                  <form>
+                    <fieldset>
+                      <label>아이디: <input type="text" id="user_id" size="10"></label>
+                      <label>비밀번호: <input type="password" id="user_pw" size="10"></label>
+                      <input type="submit" value="로그인">
+                    </fieldset>
+                  </form>
 								</header>
 								<a href="#work" class="jumplink pic">
 									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
-									<img src="images/me.JPG" alt="" />
+									<img src="images/me.jpg" alt="" />
 								</a>
 							</article>
 
@@ -47,10 +61,17 @@
 									<h2>게시판</h2>
 								</header>
 								<p>
-									재학 중 불편함을 겪었던 일, 부정하다고 생각하거나, 또는 바뀌어야한다고 생각하신 일이 있다면, 여러분의 의견을 작성해주세요. 대학의 발전과 후배들에게 큰 도움이 됩니다.
+									재학 중 불편함을 겪었던 일, 부정하다고 생각하거나, 또는 바뀌어야한다고 생각하신 일이 있다면,<br> 여러분의 의견을 작성해주세요. 대학의 발전과 후배들에게 큰 도움이 됩니다.
 								</p>
 								<section>
                   <!-- 번호, 날짜,게시물 제목, 공감 수, 진행 상태 -->
+                  <nav>
+                    <ul id="topmenu">
+                      <li><a href="#청원하기">청원하기</a></li>
+                      <li><a href="#진행중인 청원"">진행중인 청원</a></li>
+                      <li><a href="#답변이 완료된 청원">답변이 완료된 청원</a></li>
+                    </ul>
+                  </nav>
 									<!-- <div class="row">
 										<div class="col-4 col-6-medium col-12-small">
 											<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
@@ -92,7 +113,7 @@
 				<!-- Footer -->
 					<div id="footer">
 						<ul class="copyright">
-							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; GyeongHo Na.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
 					</div>
 
