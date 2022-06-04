@@ -1,12 +1,5 @@
 # 개요: 문 정부 때 청원 시스템이 소통과 공감의 장이 되는 것을 보고 학교에도 이런 시스템을 만들고 싶었다.
 
-참고 사이트
-
-[https://github.com/GIST-Petition-Site-Project/GIST-petition-web](https://github.com/GIST-Petition-Site-Project/GIST-petition-web)
-
-[https://github.com/GIST-Petition-Site-Project/GIST-petition-admin](https://github.com/GIST-Petition-Site-Project/GIST-petition-admin)
-
-[https://github.com/ohasesung1/DGSW-PetitionSite-Web](https://github.com/ohasesung1/DGSW-PetitionSite-Web)
 
 ## **기능 명세**
 
