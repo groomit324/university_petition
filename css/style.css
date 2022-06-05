@@ -67,10 +67,10 @@ nav {
 }
 
 #topMenu > li > a {
-  display: black;
+  display: block;
   color: #fff;
   font-weight: 600;
-  text-shadow: 0 1px #07c;
+  text-shadow: 0 1px #37455c;
   padding: 20px 60px;
 }
 
@@ -80,7 +80,7 @@ nav {
 
 #topMenu > li > a:hover {
   color: #000;
-  text-shadow: 0 -1px #07c;
+  text-shadow: 0 -1px #37455c;
 }
 
 #topMenu > li > ul {
@@ -103,7 +103,7 @@ nav {
 }
 
 #topMenu > li:hover > ul {
-  display: black;
+  display: block;
   z-index: 10;
 }
 
@@ -112,13 +112,25 @@ nav {
   
 }
 
-#newPetitions {
+#topMenu >  {
+  display: none;
+}
+#slideShow {
   clear: both;
   width: 100%;
   height: 300px;
-  background-color: orange;
   overflow: hidden;
+  position: relative;
 }
+#slides {
+  position: absolute;
+}
+#slides > img {
+  width: 100%;
+  float: left;
+}
+
+
 /* 콘텐츠 영역 */
 #contents {
   width: 100%;
