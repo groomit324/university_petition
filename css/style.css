@@ -23,7 +23,7 @@ ul {
 /* 헤더 영역 */
 header {
   width: 100%;
-  height: 100px;
+  height: 105px;
   background-color: #37455c;
 }
 
@@ -31,7 +31,7 @@ header {
 #logo {  
   float: left;
   width: 250px;
-  height: 80px;
+  height: 105px;
   line-height:50px; /* height값과 같게 만들어서 세로로 중간에 오도록 맞춤 */
   padding-left: 25px;
   padding-right: 10px;
