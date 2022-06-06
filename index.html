@@ -4,7 +4,7 @@
 	<head>
 		<title>대학생 청원게시판</title>
 		<meta charset="utf-8" />
-    <meta name="description" content="대하생 청원 게시판">
+    <meta name="description" content="대학생 청원 게시판">
     <meta name="author" content="GyeongHo Na">
     <!-- 반응형 웹 -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
@@ -45,21 +45,69 @@
       </div>
       <div id="contents">
         <div id="tabMenu">
-          
+          <input type="radio" id="tab1" name="tabs" checked>
+          <label for="tab1">청원글</label>
+          <input type="radio" id="tab2" name="tabs">  
+          <label for="tab2">공지사항</label>
+
+          <div id="petitions" class="tabContent">
+            <h2>가장 관심받는 청원글</h2>
+            <ul>
+              <li>게시글1</li>
+              <li>게시글2</li>
+            </ul>
+          </div>
+          <div id="notice" class="tabContent">
+            <h2>공지사항 내용입니다.</h2>
+            <ul>
+              <li>공지사항1</li>
+              <li>공지사항2</li>
+            </ul>
+          </div>
         </div>
+        
         <div id="links">
-          
+          <ul>
+            <li>
+              <a href="#">
+                <span id="quick-icon1"></span>
+                <p>청원작성</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span id="quick-icon2"></span>
+                <p>검색하기</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span id="quick-icon3"></span>
+                <p>문의하기</p>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
 
 
 			<!-- Footer -->
 		  <footer>
-				<ul>
-					<li>&copy; GyeongHo Na.</li>
-				</ul>
+        <div id="bottomMenu">
+          <ul>
+            <li><a href="#">개발자</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">사이트맵</a></li>
+          </ul>
+          <div id="sns">
+            <ul>
+              <li><a href="https://instagram.com/g___ho_/" target="_blank" rel="noreferrer noopener"><img src="css/images/sns-1.png"width="20px" height="22px"></a></li>
+              <li><a href="https://github.com/groomit324" target="_blank" rel="noreferrer noopener"><img src="css/images/sns-2.png" width="21px" height="20px"></a></li>
+            </ul>
+          </div>
+        </div>
       </footer>
-    </div>>    
+    </div>    
 
 		<!-- Scripts -->
 		<script src="slideshow.js"></script>
