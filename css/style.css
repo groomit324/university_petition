@@ -180,19 +180,11 @@ nav {
   display: none;
 }
 
-#petitions ul {
+#petitions, #notice ul {
   list-style: disc;
   margin-left: 30px;
 }
-#petitions ul li {
-  font-size: 16px;
-  line-height: 2.5;
-}
-#notice ul {
-  list-style: disc;
-  margin-left: 30px;
-}
-#notice ul li {
+#petitions, #notice ul li {
   font-size: 16px;
   line-height: 2.5;
 }
@@ -229,13 +221,13 @@ nav {
   line-height: 150px;
 }
 #quick-icon1 {
-  background-image:url('https://github.com/groomit324/university_petition/blob/main/css/images/icon-1.jpg');
+  background-image:url('https://github.com/groomit324/university_petition/main/css/images/icon-1.jpg');
 }
 #quick-icon2 {
-  background-image:url('https://github.com/groomit324/university_petition/blob/main/css/images/icon-2.jpg');
+  background-image:url('https://github.com/groomit324/university_petition/main/css/images/icon-2.jpg');
 }
 #quick-icon3 {
-  background-image:url('https://github.com/groomit324/university_petition/blob/main/css/images/icon-2.jpg');
+  background-image:url('https://github.com/groomit324/university_petition/main/css/images/icon-2.jpg');
 }
 #links ul li a p {
   margin-top: 15px;
