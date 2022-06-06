@@ -23,7 +23,7 @@ ul {
 /* 헤더 영역 */
 header {
   width: 100%;
-  height: 105px;
+  height: 90px;
   background-color: #37455c;
 }
 
@@ -31,8 +31,9 @@ header {
 #logo {  
   float: left;
   width: 250px;
-  height: 105px;
-  line-height:50px; /* height값과 같게 만들어서 세로로 중간에 오도록 맞춤 */
+  height: 90px;
+  line-height: 40px; /* height값과 같게 만들어서 세로로 중간에 오도록 맞춤 */
+  padding-top: 6px;
   padding-left: 25px;
   padding-right: 10px;
 }
@@ -42,7 +43,7 @@ header {
   font-weight: 500;
   font-size: 32px;
   color: #fff;
-  text-shadow: 0 -1px 0 #222;
+  text-shadow: 2px 2px 0 #222;
 }
 
 /* 내비게이션 영역 */
@@ -53,8 +54,8 @@ nav {
   font-size: 20px;
   float: right;
   width: 900px;
-  height: 100px;
-  padding-top: 40px;
+  height: 90px;
+  padding-top: 30px;
 }
 
 #topMenu {
@@ -118,7 +119,7 @@ nav {
 #slideShow {
   clear: both;
   width: 100%;
-  height: 300px;
+  height: 310px;
   overflow: hidden;
   position: relative;
 }
@@ -130,11 +131,11 @@ nav {
   float: left;
 }
 
-
 /* 콘텐츠 영역 */
 #contents {
   width: 100%;
   height: 300px;
+  margin-top: 20px;
 }
 
 /* 탭 메뉴 영역 */
@@ -142,7 +143,63 @@ nav {
   float: left;
   width: 600px;
   height: 100%;
-  background-color: violet;
+  margin-top: 10px;
+/*   border-style: solid;
+  border-width: 1px;
+  border-color: gray; */
+}
+#tabMenu input[type="radio"] {
+  display: none;
+}
+#tabMenu label {
+  display: inline-block;
+  margin: 0 0;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #aaa;
+  border: 1px solid transparent;
+}
+#tabMenu label:hover {
+  color: #222;
+  cursor: pointer;
+}
+#tabMenu input:checked + label {
+  color: #b00;
+  border: 1px solid #ddd;
+  background-color: #eee;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+.tabContent {
+  display: none;
+  padding: 20px 0 0;
+  border-top: 1px solid #ddd;
+}
+.tabContent h2 {
+  display: none;
+}
+
+#petitions ul {
+  list-style: disc;
+  margin-left: 30px;
+}
+#petitions ul li {
+  font-size: 16px;
+  line-height: 2.5;
+}
+#notice ul {
+  list-style: disc;
+  margin-left: 30px;
+}
+#notice ul li {
+  font-size: 16px;
+  line-height: 2.5;
+}
+
+#tab1:checked ~ #petitions, 
+#tab2:checked ~ #notice {
+  display: block;
 }
 
 /* 퀵 링크 영역 */
@@ -150,12 +207,75 @@ nav {
   float: right;
   width: 600px;
   height: 100%;
-  background-color: skyblue;
+  margin-top: 15px;
 }
-
+#links ul {
+  padding: 0;
+  overflow: hidden;
+}
+#links ul li {
+  float: left;
+  width: 33%;
+  text-align: center;
+  margin: 10px 0;
+}
+#links ul li a span {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  border: 1px solid #ddd;
+  line-height: 150px;
+}
+#quick-icon1 {
+  background-image:url('https://github.com/groomit324/university_petition/blob/main/css/images/icon-1.jpg');
+}
+#quick-icon2 {
+  background-image:url('https://github.com/groomit324/university_petition/blob/main/css/images/icon-2.jpg');
+}
+#quick-icon3 {
+  background-image:url('https://github.com/groomit324/university_petition/blob/main/css/images/icon-2.jpg');
+}
+#links ul li a p {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #666;
+}
 /* 푸터 영역 */
 footer {
   width: 100%;
   height: 100px;
-  background-color: gray;
+  border-top:2px solid #222;
+}
+
+#bottomMenu {
+  width: 100%;
+  height:20px;
+  position: relative;
+}
+
+#bottomMenu ul {
+  margin: top 15px;;
+}
+#bottomMenu ul li {
+  float: left;
+  padding: 5px 20px;
+  border-right: 1px solid #ddd;
+}
+#bottomMenu ul li:last-child {
+  border-right: none;
+}
+#bottomMenu ul li a, #bottomMenu ul li a:visited {
+  font-size: 15px;
+  color: #666;
+}
+#sns {
+  position:absolute;
+  right: 2px;
+}
+
+#sns ul li {
+  border: none;
+  padding: 5px;
 }
