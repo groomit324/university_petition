@@ -87,14 +87,14 @@ nav {
 #topMenu > li > ul {
   display: none;
   position: absolute;
-  width: 160px;
+  width: 144px;
   background-color: rgba(255, 255, 255, 0.6);
-  left: 20px;
+  left: 30px;
   margin: 0;
 }
 
 #topMenu > li > ul > li {
-  padding: 10px 10px 10px 30px;
+  padding: 10px 10px 10px 15px;
 }
 
 #topMenu > li > ul >li > a {
@@ -221,13 +221,13 @@ nav {
   line-height: 150px;
 }
 #quick-icon1 {
-  background-image:url('https://github.com/groomit324/university_petition/main/css/images/icon-1.jpg');
+  background-image:url("../images/icon-1.jpg");
 }
 #quick-icon2 {
-  background-image:url('https://github.com/groomit324/university_petition/main/css/images/icon-2.jpg');
+  background-image:("../images/icon-2.jpg");
 }
 #quick-icon3 {
-  background-image:url('https://github.com/groomit324/university_petition/main/css/images/icon-2.jpg');
+  background-image:("../images/icon-3.jpg");
 }
 #links ul li a p {
   margin-top: 15px;
@@ -237,14 +237,18 @@ nav {
 /* 푸터 영역 */
 footer {
   width: 100%;
-  height: 100px;
-  border-top:2px solid #222;
+  height: 10px;
+  border-top:2px solid #fff;
+  position : relative;
+  transform : translateY(-100%);
+  
 }
 
 #bottomMenu {
   width: 100%;
-  height:20px;
-  position: relative;
+  height:auto;
+  min-height: 100%;
+  padding-bottom: 10px;
 }
 
 #bottomMenu ul {
@@ -260,7 +264,7 @@ footer {
 }
 #bottomMenu ul li a, #bottomMenu ul li a:visited {
   font-size: 15px;
-  color: #666;
+  color: #fff;
 }
 #sns {
   position:absolute;
